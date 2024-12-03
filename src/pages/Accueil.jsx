@@ -1,13 +1,28 @@
-import pictureAccueil from '../assets/eric-muhr-P_XxsdVgtpQ-unsplash.jpg';
+import pictureAccueil from '../assets/eberhard-grossgasteiger-e0M3I9vQ6hg-unsplash.jpg';
 import '../styles/main.scss';
-import Card from '../components/Card'
+import Card from '../components/Card';
+import { Element } from "react-scroll";
+
 
 function Accueil({ logements }) {
   return (
     <div className="main">
-      <div className="banner banner__Accueil">
-        <img src={pictureAccueil} className="banner__Picture" alt="Bord de mer" />
+      <div className="welcome">
+        <img src={pictureAccueil} alt="Montagne" />
       </div>
+
+      <div>
+        <Element name="activites">Bienvenue à la section Activités</Element>
+      </div>
+
+      <div>
+        <Element name="competences">Bienvenue à la section Compétences</Element>
+      </div>
+
+      <div>
+        <Element name="contact">Bienvenue à la section Contact</Element>
+      </div>
+
       <div className="gallery">
         {logements.map((logement) => (
           <Card
@@ -22,4 +37,4 @@ function Accueil({ logements }) {
   )
 }
 
-export default Accueil;
+export default Accueil

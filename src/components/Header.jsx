@@ -1,18 +1,9 @@
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
-import PinkLogo from '../assets/logo_KasaPink.png'
+import { Link } from "react-scroll";
 
-const HomeLogo = styled.img`
-  height: 70px;
-
-  @media(min-width: 480px) and (max-width: 1024px) {
-    height: 58px;
-  }
-  
-  @media(max-width: 480px) {
-    height: 47px;
-  }
-`
+//import PinkLogo from '../assets/logo_KasaPink.png'
+//import Navbar from './Navbar'
 
 const NavContainer = styled.nav`
   padding: 45px 0;
@@ -36,6 +27,7 @@ const NavContainer = styled.nav`
     margin-right: 20px;
   }  
 `
+
 const NavBlock = styled.nav`
   display: flex;
   justify-content: right;
@@ -73,10 +65,18 @@ const StyledLink = styled(NavLink)`
 function Header() {
   return (
     <NavContainer>
-        <HomeLogo src={PinkLogo} />
         <NavBlock>
           <StyledLink to="/">Accueil</StyledLink>
-          <StyledLink to="/APropos">A-Propos</StyledLink>
+          <Link to="activites" smooth={true} duration={500}>
+          Activités
+          </Link>
+          <Link to="competences" smooth={true} duration={500}>
+          Compétences
+          </Link>
+          <Link to="contact" smooth={true} duration={500}>
+            Contact
+          </Link>
+          <StyledLink to="/APropos">Portfolio</StyledLink>
         </NavBlock>
     </NavContainer>
   )

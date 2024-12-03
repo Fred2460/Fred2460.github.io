@@ -5,8 +5,8 @@
 .main {
   display: flex;
   flex-direction: column;
-  margin-left: 100px;
-  margin-right: 100px;
+  //margin-left: 100px;
+  //margin-right: 100px;
   font-family: $font-family-base;
   background-color: $primaryB-color;
 
@@ -91,6 +91,10 @@
     justify-content: left;
     padding: 0 110px 0 20px;
   }
+}
+
+.welcome img {
+  width: 100%;
 }
 
 /* ****************** Style pour la gallerie de la page ACCUEIL ********************** */
