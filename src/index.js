@@ -11,8 +11,6 @@ import createGlobalStyle from 'styled-components'
 import './styles/index.scss';
 import logementsData from './datas/logements.json'
 
-import { Element } from "react-scroll";
-
 const GlobalStyle = createGlobalStyle`
     * {
       font-family: $font-family-base;

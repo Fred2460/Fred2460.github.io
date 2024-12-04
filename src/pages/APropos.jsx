@@ -1,4 +1,3 @@
-import pictureAPropos from '../assets/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg'
 import '../styles/main.scss'
 import Collapse from '../components/Collapse'
 
@@ -6,9 +5,9 @@ function APropos() {
 
   return (
     <div className="main">
-      <div className="banner banner__APropos">
-        <img src={pictureAPropos} className="banner__Picture" alt="Bord de mer" />
-      </div>
+      
+      
+      
       
       <div className="valeurs">
 

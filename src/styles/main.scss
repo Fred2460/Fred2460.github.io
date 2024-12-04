@@ -7,6 +7,7 @@
   flex-direction: column;
   //margin-left: 100px;
   //margin-right: 100px;
+  margin-top: 76px;
   font-family: $font-family-base;
   background-color: $primaryB-color;
 
@@ -93,8 +94,74 @@
   }
 }
 
+/* image d'accueil */
 .welcome img {
   width: 100%;
+}
+
+/* ****************** blocs page d'accueil ********************** */
+
+.block {
+  margin: 100px 100px 100px 100px;
+  text-align: center;
+  background-color: $secondaryB-color;
+  padding: 30px;
+
+  &__title {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    color: $secondaryT-color;
+  }
+
+  &__line {
+    width: 55px;
+    height: 1px;
+    margin: 30px auto;
+    background: $secondaryT-color;
+  }
+}
+
+/* ****************** style pour services ************************ */
+.services {
+
+
+}
+
+/* ****************** style pour contact ************************ */
+.formContact {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-left: 25%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+  border: none;
+
+
+    &__field {
+      margin-bottom: 15px;
+      width: 100%;
+      height: auto;
+      padding: 10px;
+      //overflow: hidden;
+      border: 1px solid $secondaryB-color;
+      border-radius: 4px;
+      font-size: 14px;
+      
+      &--submit {
+        background-color: $blockB-color;
+        color:$blockT-color;
+        width: 100%;
+        padding: 10px;
+      }
+    }
+
+
 }
 
 /* ****************** Style pour la gallerie de la page ACCUEIL ********************** */

@@ -1,0 +1,31 @@
+@import 'variables';
+
+.footer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $blockT-color;
+    background-color: $blockB-color;
+    font-size: 16px;
+    font-weight: 500;
+    gap: 30px;
+
+    @media(max-width: 480px) {
+      font-size: 12px;
+      gap: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
