@@ -7,11 +7,11 @@ function Header() {
     <div className='navCont'>
         <div className='navCont__block'>
           <NavLink className='navCont__block--link' to="/#welcome">Accueil</NavLink>
-          <NavLink className='navCont__block--link2' to="/#services">Services</NavLink>
-          <NavLink className='navCont__block--link2' to="/#portfolio">Portfolio</NavLink>
-          <NavLink className='navCont__block--link2' to="/#competences">Compétences</NavLink>
-          <NavLink className='navCont__block--link2' to="/#contact">Contact</NavLink>
+          <NavLink className='navCont__block--link' to="/#services">Services</NavLink>
+          <NavLink className='navCont__block--link' to="/#portfolio">Portfolio</NavLink>
+          <NavLink className='navCont__block--link' to="/#competences">Compétences</NavLink>
           <NavLink className='navCont__block--link' to="/APropos">A-Propos</NavLink>
+          <NavLink className='navCont__block--linkB' to="/#contact">A votre écoute</NavLink>
         </div>
     </div>
   )

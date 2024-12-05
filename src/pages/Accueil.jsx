@@ -22,7 +22,10 @@ function Accueil({ logements }) {
     <div className="main">
       <section className="welcome" id="welcome">
         <Element  name="welcome"></Element>
-        <img src={pictureAccueil} alt="Buissons" />
+        <div className="welcome__container">
+          <img className="welcome__picture" src={pictureAccueil} alt="Buissons" />
+          <h1 className="welcome__banner">Créez de la valeur dans l'écosystème internet</h1>
+        </div>
       </section>
 
       <section className="block" id="services">
@@ -30,20 +33,30 @@ function Accueil({ logements }) {
         <div className="block__line"></div>
       </section>
 
-      <div className="gallery">
-        {logements.map((logement) => (
-          <Card
-            key={logement.id}
-            id={logement.id}
-            title={logement.title}
-            cover={logement.cover}
-          />
-        ))}
-      </div>
-
-      <section id="competences">
-        <Element  name="competences">Bienvenue à la section Compétences</Element>
+      <section className="block" id="portfolio">
+        <Element  name="portfolio" className="block__title">Portfolio</Element>       
         <div className="block__line"></div>
+        <div className="gallery">
+          {logements.map((logement) => (
+            <Card
+              key={logement.id}
+              id={logement.id}
+              title={logement.title}
+              cover={logement.cover}
+            />
+          ))}
+        </div>
+      </section>
+
+      <section className="block" id="competences">
+        <Element  name="competences" className="block__title">Bienvenue à la section Compétences</Element>
+        <div className="block__line"></div>
+        <p className="block__text">
+          Lorem ipsum odor amet, consectetuer adipiscing elit. Ullamcorper cubilia cras tincidunt nulla cubilia 
+          vehicula commodo amet? Hac augue vestibulum enim sem ridiculus platea. Penatibus sed rhoncus conubia 
+          sapien natoque volutpat montes maecenas. Etiam laoreet dui, nibh nec cras id facilisis ac. Consectetur 
+          nunc at pellentesque at penatibus penatibus curae lorem. Ipsum risus faucibus; class commodo tincidunt fringilla.
+        </p>
       </section>
 
       <section className="block" id="contact">
