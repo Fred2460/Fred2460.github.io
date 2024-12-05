@@ -1,0 +1,22 @@
+[
+	{
+		"id": "a1000",
+		"title": "HTML 5",
+		"logo": "../assets/tech/html5.png"
+	},
+    {
+        "id": "a1001",
+        "title": "CSS 3",
+        "logo": "../assets/tech/css3.png"
+    },
+    {
+        "id": "a1002",
+        "title": "JavaScript",
+        "logo": "../assets/tech/JS.jpeg"
+    },
+    {
+        "id": "a1003",
+        "title": "Node.js",
+        "logo": "../assets/tech/node-js.jpg"
+    }
+]

@@ -2,12 +2,11 @@ import '../styles/fprojet.scss'
 import Error from './Erreur'
 import projetsData from '../datas/projets.json'
 import { useParams } from 'react-router-dom'
-import { FaStar } from 'react-icons/fa'
 import Carousel from '../components/Carousel'
 import Collapse from '../components/Collapse'
 
 function FProjet() {
-  /* récupération de l'id et des informations du logement sélectionné */
+  /* récupération de l'id et des informations du projet sélectionné */
   const { id } = useParams()
   const projet = projetsData.find((projet) => projet.id === id)
 
@@ -22,12 +21,12 @@ function FProjet() {
       {/* Carrousel de photos */}
       <Carousel className="carousel" pictures={projet.pictures} />
 
-      {/* informations principales du logement */}
+      {/* informations principales du projet */}
       <div className="infoBlock">
         <div className='identification'> 
           <h1 className='identification__title'>{projet.title}</h1>
           <p className='identification__location'>{projet.location}</p>
-          <div className='identification__tags'> {/* tags du logement */}
+          <div className='identification__tags'> {/* tags du projet */}
             {projet.tags.map((tag, index) => (
               <p key={index} className={tag !== undefined ? 'identification__tags--tag' : ''}>
                 {tag}

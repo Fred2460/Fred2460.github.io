@@ -3,10 +3,14 @@ import '../styles/main.scss';
 import Card from '../components/Card';
 import { Element } from "react-scroll";
 import { useEffect } from "react";
+//import { useState } from "react";
 import { useLocation } from "react-router-dom";
+//import skillData from '../datas/skills.json'
+//import Carousel from '../components/Carousel'
 
+function Accueil({ projets }) {
 
-function Accueil({ logements }) {
+  /* gestion des redirections */
   const location = useLocation();
 
   useEffect(() => {
@@ -17,6 +21,25 @@ function Accueil({ logements }) {
       }
     }
   }, [location]);
+
+  /* tableau des compétences */
+  /*
+  const SkillsList = () => {
+    const [skills, setSkills] = useState([]);
+  
+    useEffect(() => {
+      // Fetch the JSON file
+      fetch('/skills.json')
+        .then(response => response.json())
+        .then(data => {
+          // Assuming the JSON file contains an array of skills
+          setSkills(data);
+        })
+        .catch(error => {
+          console.error('Error fetching the skills data:', error);
+        });
+    }, []);
+    */
 
   return (
     <div className="main">
@@ -29,7 +52,7 @@ function Accueil({ logements }) {
       </section>
 
       <section className="block" id="services">
-        <Element  name="services" className="block__title">Créez de la valeur dans l'écosystème internet</Element>          
+        <Element  name="services" className="block__title">Mes services</Element>          
         <div className="block__line"></div>
       </section>
 
@@ -37,19 +60,19 @@ function Accueil({ logements }) {
         <Element  name="portfolio" className="block__title">Portfolio</Element>       
         <div className="block__line"></div>
         <div className="gallery">
-          {logements.map((logement) => (
+          {projets.map((projet) => (
             <Card
-              key={logement.id}
-              id={logement.id}
-              title={logement.title}
-              cover={logement.cover}
+              key={projet.id}
+              id={projet.id}
+              title={projet.title}
+              cover={projet.cover}
             />
           ))}
         </div>
       </section>
 
       <section className="block" id="competences">
-        <Element  name="competences" className="block__title">Bienvenue à la section Compétences</Element>
+        <Element  name="competences" className="block__title">Compétences</Element>
         <div className="block__line"></div>
         <p className="block__text">
           Lorem ipsum odor amet, consectetuer adipiscing elit. Ullamcorper cubilia cras tincidunt nulla cubilia 
@@ -57,6 +80,7 @@ function Accueil({ logements }) {
           sapien natoque volutpat montes maecenas. Etiam laoreet dui, nibh nec cras id facilisis ac. Consectetur 
           nunc at pellentesque at penatibus penatibus curae lorem. Ipsum risus faucibus; class commodo tincidunt fringilla.
         </p>
+        {/*<Carousel className="carousel" pictures={skill.logo} />*/}
       </section>
 
       <section className="block" id="contact">

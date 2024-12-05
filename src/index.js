@@ -29,7 +29,7 @@ root.render(
       <GlobalStyle />
       <Header />
       <Routes>
-        <Route path="/" element={<Accueil logements={projetsData} />} />
+        <Route path="/" element={<Accueil projets={projetsData} />} />
         <Route path="/APropos" element={<APropos />} />
         <Route path="/FProjet/:id" element={<FProjet />} />
         <Route path="*" element={<Error />} />
