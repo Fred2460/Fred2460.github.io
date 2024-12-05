@@ -50,6 +50,13 @@ function Accueil({ projets }) {
           <h1 className="welcome__banner">Créez de la valeur dans l'écosystème internet</h1>
         </div>
       </section>
+      <section className="block">
+        <p className="block__text">
+          Bonjour,
+          je suis Frederic FLIPO
+        </p>
+        <h2 className="block__text">Développeur web, à votre service.</h2>
+      </section>
 
       <section className="block" id="services">
         <Element  name="services" className="block__title">Mes services</Element>          

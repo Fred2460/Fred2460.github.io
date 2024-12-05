@@ -27,20 +27,25 @@
   &__container {
     position: relative;
     width: 100%;
+
   }
 
   &__picture {
     width: 100%;
     height: auto;
+    //height: 600px;
+    //max-height: 800px;
     display: block;
+    object-fit: cover;
+    overflow: hidden;
     filter: brightness(0.5);
   }
 
   &__banner {
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -20%);
     color: $primaryT-color;
     font-size: 72px;
     text-align: center;
@@ -81,6 +86,10 @@
     font-family: $font-family-base;
     color: $secondaryT-color;
     font-size: 16px;
+
+    &--h2 {
+      font-size: 20px;
+    }
   }
 }
 
