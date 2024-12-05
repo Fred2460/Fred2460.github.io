@@ -2,7 +2,7 @@ import PropTypes from "prop-types"
 import "../styles/main.scss"
 
 function HandleClick(id) {
-  window.location.href=`/FLogement/${id}`
+  window.location.href=`/FProjet/${id}`
 }
 
 Card.propTypes = {
@@ -17,7 +17,7 @@ function Card({ id = "", title = "", cover = "" }) {
   return (
     <div className="gallery__card" onClick={() => HandleClick(id)}>
       <div className="gallery__card--overlay"></div>
-      <img src={cover} className="gallery__card--cover" alt="Apperçu du logement" />
+      <img src={cover} className="gallery__card--cover" alt="Apperçu du projet" />
       <p className="gallery__card--title">{title}</p>
     </div>
   )

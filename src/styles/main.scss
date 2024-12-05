@@ -124,14 +124,10 @@
 /* ****************** Style pour la gallerie de la page ACCUEIL ********************** */
 
 .gallery {
-  //height: 830px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  //overflow-y:auto;
   gap: 50px;
   padding: 50px;
-  margin-top: 50px;
-  margin-bottom: 50px;
   border-radius: 25px;
   background-color: $secondaryB-color;
 

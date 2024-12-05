@@ -1,0 +1,160 @@
+[
+	{
+		"id": "c67ab8a7",
+		"title": "Développer l’interface Responsive de l’agence de voyage Booki",
+		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
+		"pictures": [
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-2.jpg",
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-3.jpg",
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-4.jpg",
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-5.jpg"
+		],
+		"description": "",
+		"location": "Intégration web avec HTML & CSS",
+		"equipments": [
+			"Intégrer du contenu conformément à une maquette avec HTML et CSS",
+			"Implémenter une interface responsive avec HTML et CSS"
+		],
+		"tags": [
+			"HTML",
+			"CSS",
+			"Figma"
+		],
+		"lien": "https://github.com/Fred2460/OC_Projet2_Agence-Booki.git"
+	},
+	{
+		"id": "b9123946",
+		"title": "Créer une page web dynamique Javascript pour l’architecte Sophie Bluel",
+		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-1.jpg",
+		"pictures": [
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-1.jpg",
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-2.jpg",
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-3.jpg",
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-4.jpg",
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-5.jpg",
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-6.jpg"
+		],
+		"description": "",
+		"location": "Développement web avec JavaScript",
+		"equipments": [
+			"Gérer la page de connexion pour l’administration du site et récupérer les données utilisateurs dans le JavaScript via des formulaires",
+			"Manipuler les éléments du DOM avec JavaScript",
+			"Gérer les événements utilisateurs avec JavaScript et upload de nouveaux medias"
+		],
+		"tags": [
+			"HTML",
+			"CSS",
+			"Javascript",
+			"Figma"
+		],
+		"lien": "https://github.com/Fred2460/OC_Projet3_Architecte-Sophie-Bluel.git"
+	},
+	{
+		"id": "46d188c5",
+		"title": "Débugger et optimiser le site web de la photographe Nina Carducci",
+		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-2-1.jpg",
+		"pictures": [
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-2-1.jpg",
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-2-2.jpg",
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-2-3.jpg",
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-2-4.jpg"
+		],
+		"description": "Optimiser la performance d’un site, son accessibilité, ses meilleures pratiques et son référencement naturel SEO",
+		"location": "Optimisation et débug d’un site web",
+		"equipments": [
+			"Optimiser les performances d’utilisation d’un site web",
+			"Débugger un site grâce aux Chrome DevTools",
+			"Améliorer l’accessibilité d’un site et intégrer le code ARIA",
+			"Intégrer le référencement local avec Schema.org"
+		],
+		"tags": [
+			"Lighthouse",
+			"Wave",
+			"axe DevTools",
+			"Schema.org"
+		],
+		"lien": "https://github.com/Fred2460/OC_Projet4_Nina-Carducci.git"
+	},
+	{
+		"id": "7af00cd6",
+		"title": "Créer avec React l’application web de l’agence de location immobilière Kasa",
+		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-1.jpg",
+		"pictures": [
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-1.jpg",
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-2.jpg",
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-3.jpg",
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-4.jpg"
+		],
+		"description": "",
+		"location": "Développement web avec React",
+		"equipments": [
+			"Initialiser une application avec Create React App",
+			"Configurer la navigation entre les pages de l'application avec React Router",
+			"Développer des éléments de l'interface d'un site web grâce à des composants React"
+		],
+		"tags": [
+			"React",
+			"React Router",
+			"SaSS/SCSS",
+			"Javascript",
+			"Node.js",
+			"données JSON"
+		],
+		"lien": "https://github.com/Fred2460/OC_Projet5_Kasa.git"
+	},
+	{
+		"id": "cb02d69b",
+		"title": "Créer avec un serveur avec Node et Express, le back-end du site de notation de livres Vieux Grimoire",
+		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-19-1.jpg",
+		"pictures": [
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-19-1.jpg"
+		],
+		"description": "",
+		"location": "Développement back-end avec NodeJS",
+		"equipments": [
+			"Implémenter un modèle logique de données avec une architecture MVC (Modèle-Vue-Contrôleur) avec Mongoose",
+			"Mettre en œuvre des opérations CRUD (Créer, Lire, Mettre à jour, Supprimer) de manière sécurisée",
+			"Stocker les données dans une base NoSQL de manière sécurisée",
+			"Appliquer les bonnes pratiques du Green Code pour réduire l'empreinte écologique du site"
+		],
+		"tags": [
+			"Node.js",
+			"Express.js",
+			"Base NoSQL",
+			"Architecture MVC",
+			"API RESTful"
+		],
+		"lien": "https://github.com/Fred2460/OC_Projet6_Vieux-Grimoire.git"
+	},
+	{
+		"id": "0979876d",
+		"title": "Piloter l’organisation et le déroulement du projet de développement web Menu Maker by Qwenta",
+		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-1.jpg",
+		"pictures": [
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-1.jpg",
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-2.jpg",
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-3.jpg",
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-4.jpg",
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-5.jpg",
+			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-6.jpg"
+		],
+		"description": "",
+		"location": "Gestion de projet et outils de développement",
+		"equipments": [
+			"Suivre le déroulement du projet grâce à un outil de gestion de projet",
+			"Rédiger les spécifications techniques d'un projet web à partir de besoins fonctionnels",
+			"Découper des fonctionnalités en tâches pour préparer le développement",
+			"Présenter la solution technique",
+			"Installer un environnement de développement front-end",
+			"Mettre en place une méthode de veille technologique"
+		],
+		"tags": [
+			"Méthode Agile",
+			"SCRUM",
+			"Kanban",
+			"Notion©"
+		],
+		"lien": ""
+	}
+]
