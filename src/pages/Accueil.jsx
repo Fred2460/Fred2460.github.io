@@ -69,6 +69,7 @@ function Accueil({ projets }) {
               id={projet.id}
               title={projet.title}
               cover={projet.cover}
+              tags={projet.tags}
             />
           ))}
         </div>

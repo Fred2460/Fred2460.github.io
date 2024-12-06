@@ -121,40 +121,6 @@
 
 }
 
-/* ****************** style pour formulaire de contact ************************ */
-.formContact {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  margin-left: 25%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 50%;
-  border: none;
-
-    &__field {
-      margin-bottom: 15px;
-      width: 100%;
-      padding: 10px;
-      //overflow: hidden;
-      border: 1px solid $secondaryB-color;
-      border-radius: 4px;
-      font-family: $font-family-base;
-      font-size: 14px;
-      
-      &--submit {
-        background-color: $blockB-color;
-        color:$blockT-color;
-        border: 1px solid $blockB-color;
-        padding: 10px;
-        font-size: 14px;
-        cursor: pointer;
-        width: 100%;
-      }
-  }
-
-
-}
 
 /* ****************** Style pour la gallerie de la page ACCUEIL ********************** */
 
@@ -211,12 +177,30 @@
 
     &--title {
       position: relative;
-      color: $blockT-color;
+      color: $secondaryT-color;
+      background-color: $secondaryB-color;
+      padding: 5px;
+      border-radius: 4px;
+      //text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       font-size: 18px;
       font-weight: 700;
       margin: 20px;
-      text-align: left;
+      text-align: center;
       z-index: 2;
+    }
+    
+    &--tags {
+      position: relative;
+      display: inline-flex;
+      color: $blockT-color;
+      background-color: $blockB-color;
+      border-radius: 4px;
+      padding: 7px;
+      font-size: 14px;
+      font-weight: 500;
+      list-style: none;
+      margin: 5px 5px 5px 5px;
+      z-index: 3;
     }
   }
 }
