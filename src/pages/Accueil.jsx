@@ -1,4 +1,4 @@
-import pictureAccueil from '../assets/20240622_195224.jpg';
+import pictureAccueil from '../assets/eberhard-grossgasteiger-e0M3I9vQ6hg-unsplash.jpg';
 import '../styles/main.scss';
 import Card from '../components/Card';
 import { Element } from "react-scroll";
@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 //import skillData from '../datas/skills.json'
 //import Carousel from '../components/Carousel'
+import ContactForm from '../components/ContactForm';
 
 function Accueil({ projets }) {
 
@@ -46,16 +47,11 @@ function Accueil({ projets }) {
       <section className="welcome" id="welcome">
         <Element  name="welcome"></Element>
         <div className="welcome__container">
-          <img className="welcome__picture" src={pictureAccueil} alt="Buissons" />
-          <h1 className="welcome__banner">Créez de la valeur dans l'écosystème internet</h1>
+          <span className="welcom__container--block"></span>
+          <img className="welcome__container--picture" src={pictureAccueil} alt="Paysage" />
+          <h1 className="welcome__container--banner">Créez de la valeur dans l'écosystème internet</h1>
+          <h2 className="welcome__container--text">Frederic FLIPO, Développeur Web</h2>
         </div>
-      </section>
-      <section className="block">
-        <p className="block__text">
-          Bonjour,
-          je suis Frederic FLIPO
-        </p>
-        <h2 className="block__text">Développeur web, à votre service.</h2>
       </section>
 
       <section className="block" id="services">
@@ -93,24 +89,7 @@ function Accueil({ projets }) {
       <section className="block" id="contact">
         <Element  name="contact" className="block__title">Vous voulez discuter d'un projet ou juste faire connaissance ?</Element>
         <div className="block__line"></div>
-        
-        <form className="formContact">
-          <div>
-            <label for="c_name"></label>
-            <input id="c_name" type="text" name="c_name" placeholder="Nom" required  className="formContact__field"></input>
-          </div>
-
-          <div>
-            <label for="c_email"></label>
-            <input id="c_email" type="email" name="c_email" placeholder="Adresse email" required className="formContact__field"></input>
-          </div>
-
-          <div >
-            <label for="c_message"></label>
-            <textarea id="c_message" type="text" name="c_message" placeholder="Votre message" required className="formContact__field"></textarea>
-          </div>
-          <input className="formContact__field formContact__field--submit" type="submit" value="Envoyer votre message"/>
-        </form>
+        <ContactForm />
       </section>
 
     </div>
@@ -118,3 +97,25 @@ function Accueil({ projets }) {
 }
 
 export default Accueil
+
+
+/*
+        <form className="formContact" methode="post" action="`mailto:contact@digitale-syntropie.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`" enctype="text/plain">
+          <div>
+            <label for="c_name"></label>
+            <input id="c_name" type="text" name="c_name" placeholder="Nom" className="formContact__field" required></input>
+          </div>
+
+          <div>
+            <label for="c_email"></label>
+            <input id="c_email" type="email" name="c_email" placeholder="Adresse email" className="formContact__field" required></input>
+          </div>
+
+          <div >
+            <label for="body"></label>
+            <textarea id="c_message" type="text" name="body" placeholder="Votre message" className="formContact__field" rows="6" required></textarea>
+          </div>
+          <input type="hidden" name="subject" value="Demande de contact"></input>
+          <input className="formContact__field--submit" type="submit" value="Envoyer votre message"/>
+        </form>
+*/
