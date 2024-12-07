@@ -20,19 +20,20 @@ function Card({ id = "", title = "", cover = "", tags }) {
 
   return (
     <div className="gallery__card" onClick={() => HandleClick(id)}>
-      <div className="gallery__card--overlay"></div>
-      <img src={require(`../assets/${cover}`)} alt="Aperçu du projet" className="gallery__card--cover" />
-      <p className="gallery__card--title">{title}</p>
-      <ul>
-        {(tags && tags.length >0) ? (
-          tags.map((tag, index) => (
-          <li key={index} className={tag !== undefined ? 'gallery__card--tags' : ''}>
-            {tag}
-          </li>))
-          ) : (
-            <li></li>
-        )}
-      </ul>
+      <div className="gallery__card__content">
+        <p className="gallery__card__content--title">{title}</p>
+        <img src={require(`../assets/${cover}`)} alt="Aperçu du projet" className="gallery__card__content--cover" />
+        <ul className="gallery__card__content--taglist">
+          {(tags && tags.length >0) ? (
+            tags.map((tag, index) => (
+            <li key={index} className={tag !== undefined ? 'gallery__card__content--tags' : ''}>
+              {tag}
+            </li>))
+            ) : (
+              <li></li>
+          )}
+        </ul>
+      </div>
     </div>
   )
 }
@@ -40,6 +41,19 @@ function Card({ id = "", title = "", cover = "", tags }) {
 export default Card
 
 /*
-      <img src={require(`../assets/${cover}`)} className="gallery__card--cover" alt="Aperçu du projet" />
-      <img src={cover} className="gallery__card--cover" alt="Aperçu du projet" />
+<div className="gallery__card" onClick={() => HandleClick(id)}>
+  <div className="gallery__card--overlay"></div> 
+  <p className="gallery__card--title">{title}</p>
+  <img src={require(`../assets/${cover}`)} alt="Aperçu du projet" className="gallery__card--cover" />
+  <ul>
+    {(tags && tags.length >0) ? (
+      tags.map((tag, index) => (
+      <li key={index} className={tag !== undefined ? 'gallery__card--tags' : ''}>
+        {tag}
+      </li>))
+      ) : (
+        <li></li>
+    )}
+  </ul>
+</div>
 */
