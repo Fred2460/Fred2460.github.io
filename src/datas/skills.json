@@ -1,22 +1,56 @@
 [
 	{
-		"id": "a1000",
+		"id": "a1001",
 		"title": "HTML 5",
-		"logo": "../assets/tech/html5.png"
+		"logo": "html5.png",
+        "type": "1"
 	},
     {
-        "id": "a1001",
-        "title": "CSS 3",
-        "logo": "../assets/tech/css3.png"
-    },
-    {
         "id": "a1002",
-        "title": "JavaScript",
-        "logo": "../assets/tech/JS.jpeg"
+        "title": "CSS 3",
+        "logo": "css3.png",
+        "type": "1"
     },
     {
         "id": "a1003",
+        "title": "JavaScript",
+        "logo": "js.png",
+        "type": "1"
+    },
+    {
+        "id": "a1004",
         "title": "Node.js",
-        "logo": "../assets/tech/node-js.jpg"
+        "logo": "node-js.png",
+        "type": "1"
+    },
+    {
+        "id": "a1005",
+        "title": "express.js",
+        "logo": "express.png",
+        "type": "1"
+    },
+    {
+        "id": "a1006",
+        "title": "React",
+        "logo": "react.png",
+        "type": "1"
+    },
+    {
+        "id": "a1007",
+        "title": "Sass",
+        "logo": "sass.png",
+        "type": "1"
+    },
+    {
+        "id": "a1008",
+        "title": "Git",
+        "logo": "git.jpg",
+        "type": "1"
+    },
+    {
+        "id": "a1009",
+        "title": "GitHub",
+        "logo": "github.png",
+        "type": "1"
     }
 ]

@@ -5,8 +5,7 @@ import { Element } from "react-scroll";
 import { useEffect } from "react";
 //import { useState } from "react";
 import { useLocation } from "react-router-dom";
-//import skillData from '../datas/skills.json'
-//import Carousel from '../components/Carousel'
+import skillData from '../datas/skills.json'
 import ContactForm from '../components/ContactForm';
 
 function Accueil({ projets }) {
@@ -24,23 +23,7 @@ function Accueil({ projets }) {
   }, [location]);
 
   /* tableau des compétences */
-  /*
-  const SkillsList = () => {
-    const [skills, setSkills] = useState([]);
-  
-    useEffect(() => {
-      // Fetch the JSON file
-      fetch('/skills.json')
-        .then(response => response.json())
-        .then(data => {
-          // Assuming the JSON file contains an array of skills
-          setSkills(data);
-        })
-        .catch(error => {
-          console.error('Error fetching the skills data:', error);
-        });
-    }, []);
-    */
+  const skills = skillData;
 
   return (
     <div className="main">
@@ -78,13 +61,20 @@ function Accueil({ projets }) {
       <section className="block" id="competences">
         <Element  name="competences" className="block__title">Compétences</Element>
         <div className="block__line"></div>
+        <div className="skillsContainer">
+          {skills.map(skill => (
+            <div key={skill.id} className="skillsContainer__item">
+              <img src={require(`../assets/tech/${skill.logo}`)} alt={skill.skill} className="skillsContainer__logo" />
+              <p className="skillsContainer__title">{skill.title}</p>
+            </div>
+          ))}
+        </div>
         <p className="block__text">
           Lorem ipsum odor amet, consectetuer adipiscing elit. Ullamcorper cubilia cras tincidunt nulla cubilia 
           vehicula commodo amet? Hac augue vestibulum enim sem ridiculus platea. Penatibus sed rhoncus conubia 
           sapien natoque volutpat montes maecenas. Etiam laoreet dui, nibh nec cras id facilisis ac. Consectetur 
           nunc at pellentesque at penatibus penatibus curae lorem. Ipsum risus faucibus; class commodo tincidunt fringilla.
         </p>
-        {/*<Carousel className="carousel" pictures={skill.logo} />*/}
       </section>
 
       <section className="block" id="contact">
