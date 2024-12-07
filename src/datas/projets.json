@@ -1,7 +1,7 @@
 [
 	{
 		"id": "c67ab8a7",
-		"title": "Développer l’interface Responsive de l’agence de voyage Booki",
+		"title": "Interface de l’agence de voyage Booki",
 		"cover": "booki_cover.png",
 		"pictures": [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
@@ -10,7 +10,7 @@
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-4.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-5.jpg"
 		],
-		"description": "",
+		"description": "Développer l’interface Responsive de l’agence de voyage Booki",
 		"location": "Intégration web avec HTML & CSS",
 		"equipments": [
 			"Intégrer du contenu conformément à une maquette avec HTML et CSS",
@@ -25,7 +25,7 @@
 	},
 	{
 		"id": "b9123946",
-		"title": "Créer une page web dynamique Javascript pour l’architecte Sophie Bluel",
+		"title": "Page web pour l’architecte Sophie Bluel",
 		"cover": "booki_cover.png",
 		"pictures": [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-1.jpg",
@@ -35,7 +35,7 @@
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-5.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-6.jpg"
 		],
-		"description": "",
+		"description": "Créer une page web dynamique Javascript pour l’architecte Sophie Bluel",
 		"location": "Développement web avec JavaScript",
 		"equipments": [
 			"Gérer la page de connexion pour l’administration du site et récupérer les données utilisateurs dans le JavaScript via des formulaires",
@@ -78,7 +78,7 @@
 	},
 	{
 		"id": "7af00cd6",
-		"title": "Créer avec React l’application web de l’agence de location immobilière Kasa",
+		"title": "Agence de location immobilière Kasa",
 		"cover": "booki_cover.png",
 		"pictures": [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-1.jpg",
@@ -86,7 +86,7 @@
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-3.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-4.jpg"
 		],
-		"description": "",
+		"description": "Créer avec React l’application web de l’agence de location immobilière Kasa",
 		"location": "Développement web avec React",
 		"equipments": [
 			"Initialiser une application avec Create React App",
@@ -105,12 +105,12 @@
 	},
 	{
 		"id": "cb02d69b",
-		"title": "Créer avec un serveur avec Node et Express, le back-end du site de notation de livres Vieux Grimoire",
+		"title": "Site de notation de livres Vieux Grimoire",
 		"cover": "booki_cover.png",
 		"pictures": [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-19-1.jpg"
 		],
-		"description": "",
+		"description": "Créer avec un serveur avec Node et Express, le back-end du site de notation de livres Vieux Grimoire",
 		"location": "Développement back-end avec NodeJS",
 		"equipments": [
 			"Implémenter un modèle logique de données avec une architecture MVC (Modèle-Vue-Contrôleur) avec Mongoose",
@@ -129,7 +129,7 @@
 	},
 	{
 		"id": "0979876d",
-		"title": "Piloter l’organisation et le déroulement du projet de développement web Menu Maker",
+		"title": "Projet de développement web Menu Maker",
 		"cover": "booki_cover.png",
 		"pictures": [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-1.jpg",
@@ -139,7 +139,7 @@
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-5.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-6.jpg"
 		],
-		"description": "",
+		"description": "Piloter l’organisation et le déroulement du projet de développement web Menu Maker by Qwenta",
 		"location": "Gestion de projet et outils de développement",
 		"equipments": [
 			"Suivre le déroulement du projet grâce à un outil de gestion de projet",

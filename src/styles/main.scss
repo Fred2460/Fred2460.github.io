@@ -151,6 +151,8 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
+    //display: grid;
+    //grid-template-rows: auto 1fr auto;
     width: 100%;
     aspect-ratio: 1 / 1;
     cursor: pointer;
@@ -171,15 +173,20 @@
     }
 
     &__content {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      //display: flex;
+      //flex-direction: column;
+      //justify-content: space-between;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      width: 100%;
       height: 100%;
       position: relative;
       z-index: 1;
 
       &--title {
-        position: relative;
+        //position: relative;
+        align-items: center;
+        justify-content: center;
         color: $blockT-color;
         background-color: $blockB-color;
         //padding: 5px;
@@ -197,9 +204,8 @@
       &--cover {
         //position: absolute;
         width: 100%;
-        //height: 100%;
-        height: 70%;
-        //height: available;
+        //height: 70%;
+        height: 100%;
         //border-radius: 10px;
         object-fit: contain;
         background-color: white;
