@@ -201,7 +201,9 @@
         height: 70%;
         //height: available;
         //border-radius: 10px;
-        object-fit: cover;
+        object-fit: contain;
+        background-color: white;
+        padding: 3px;
         //border-top: 1px solid $blockB-color;
         border-bottom: 1px solid $blockB-color;
         z-index: 0;
