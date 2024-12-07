@@ -2,7 +2,7 @@
 	{
 		"id": "c67ab8a7",
 		"title": "Développer l’interface Responsive de l’agence de voyage Booki",
-		"cover": "../assets/booki_cover.png",
+		"cover": "booki_cover.png",
 		"pictures": [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-2.jpg",
@@ -26,7 +26,7 @@
 	{
 		"id": "b9123946",
 		"title": "Créer une page web dynamique Javascript pour l’architecte Sophie Bluel",
-		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-1.jpg",
+		"cover": "booki_cover.png",
 		"pictures": [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-1.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-2.jpg",
@@ -53,7 +53,7 @@
 	{
 		"id": "46d188c5",
 		"title": "Débugger et optimiser le site web de la photographe Nina Carducci",
-		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-2-1.jpg",
+		"cover": "booki_cover.png",
 		"pictures": [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-2-1.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-2-2.jpg",
@@ -79,7 +79,7 @@
 	{
 		"id": "7af00cd6",
 		"title": "Créer avec React l’application web de l’agence de location immobilière Kasa",
-		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-1.jpg",
+		"cover": "booki_cover.png",
 		"pictures": [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-1.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-2.jpg",
@@ -106,7 +106,7 @@
 	{
 		"id": "cb02d69b",
 		"title": "Créer avec un serveur avec Node et Express, le back-end du site de notation de livres Vieux Grimoire",
-		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-19-1.jpg",
+		"cover": "booki_cover.png",
 		"pictures": [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-19-1.jpg"
 		],
@@ -130,7 +130,7 @@
 	{
 		"id": "0979876d",
 		"title": "Piloter l’organisation et le déroulement du projet de développement web Menu Maker by Qwenta",
-		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-1.jpg",
+		"cover": "booki_cover.png",
 		"pictures": [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-1.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-2.jpg",

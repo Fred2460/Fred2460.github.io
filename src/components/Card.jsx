@@ -1,5 +1,6 @@
 import PropTypes from "prop-types"
 import "../styles/main.scss"
+//import projetsData from './datas/projets.json'
 
 function HandleClick(id) {
   window.location.href=`/FProjet/${id}`
@@ -13,12 +14,14 @@ Card.propTypes = {
   
 }
 
+
+
 function Card({ id = "", title = "", cover = "", tags }) {
-  
+
   return (
     <div className="gallery__card" onClick={() => HandleClick(id)}>
       <div className="gallery__card--overlay"></div>
-      <img src={cover} className="gallery__card--cover" alt="Apperçu du projet" />
+      <img src={require(`../assets/${cover}`)} alt="Aperçu du projet" className="gallery__card--cover" />
       <p className="gallery__card--title">{title}</p>
       <ul>
         {(tags && tags.length >0) ? (
@@ -35,3 +38,8 @@ function Card({ id = "", title = "", cover = "", tags }) {
 }
 
 export default Card
+
+/*
+      <img src={require(`../assets/${cover}`)} className="gallery__card--cover" alt="Aperçu du projet" />
+      <img src={cover} className="gallery__card--cover" alt="Aperçu du projet" />
+*/

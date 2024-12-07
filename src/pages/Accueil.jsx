@@ -3,7 +3,6 @@ import '../styles/main.scss';
 import Card from '../components/Card';
 import { Element } from "react-scroll";
 import { useEffect } from "react";
-//import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import skillData from '../datas/skills.json'
 import ContactForm from '../components/ContactForm';
@@ -27,6 +26,8 @@ function Accueil({ projets }) {
 
   return (
     <div className="main">
+
+      {/* section Accueil haut de page */}
       <section className="welcome" id="welcome">
         <Element  name="welcome"></Element>
         <div className="welcome__container">
@@ -37,11 +38,13 @@ function Accueil({ projets }) {
         </div>
       </section>
 
+      {/* section Services */}
       <section className="block" id="services">
         <Element  name="services" className="block__title">Mes services</Element>          
         <div className="block__line"></div>
       </section>
 
+      {/* section Portfolio */}
       <section className="block" id="portfolio">
         <Element  name="portfolio" className="block__title">Portfolio</Element>       
         <div className="block__line"></div>
@@ -58,6 +61,7 @@ function Accueil({ projets }) {
         </div>
       </section>
 
+      {/* section Compétences */}
       <section className="block" id="competences">
         <Element  name="competences" className="block__title">Compétences</Element>
         <div className="block__line"></div>
@@ -77,6 +81,7 @@ function Accueil({ projets }) {
         </p>
       </section>
 
+      {/* section Contact */}
       <section className="block" id="contact">
         <Element  name="contact" className="block__title">Vous voulez discuter d'un projet ou juste faire connaissance ?</Element>
         <div className="block__line"></div>
