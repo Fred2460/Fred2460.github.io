@@ -1,4 +1,5 @@
 import pictureAccueil from '../assets/eberhard-grossgasteiger-e0M3I9vQ6hg-unsplash.jpg';
+import pictureProfile from '../assets/frederic_flipo_2023_n&b.jpg';
 import '../styles/main.scss';
 import Card from '../components/Card';
 import { Element } from "react-scroll";
@@ -30,12 +31,20 @@ function Accueil({ projets }) {
       {/* section Accueil haut de page */}
       <section className="welcome" id="welcome">
         <Element  name="welcome"></Element>
+        <span className="welcome__block1"></span>
+        <span className="welcome__block2"></span>
+        <img className="welcome__pictureAccueil" src={pictureAccueil} alt="Paysage de montagne" />
         <div className="welcome__container">
-          <span className="welcom__container--block"></span>
-          <img className="welcome__container--picture" src={pictureAccueil} alt="Paysage" />
           <h1 className="welcome__container--banner">Créez de la valeur dans l'écosystème internet</h1>
-          <h2 className="welcome__container--text">Frederic FLIPO, Développeur Web</h2>
+          <div className="welcome__container__ident">
+            <img className="welcome__container__ident--pictureProfile" src={pictureProfile} alt="Profile" />
+            <div className="welcome__container__ident--sub">
+              <h2 className="welcome__container__ident--sub--text1">Frederic FLIPO</h2>  
+              <h3 className="welcome__container__ident--sub--text2">Développeur Web</h3>
+            </div>
+          </div>         
         </div>
+
       </section>
 
       {/* section Services */}
@@ -93,25 +102,3 @@ function Accueil({ projets }) {
 }
 
 export default Accueil
-
-
-/*
-        <form className="formContact" methode="post" action="`mailto:contact@digitale-syntropie.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`" enctype="text/plain">
-          <div>
-            <label for="c_name"></label>
-            <input id="c_name" type="text" name="c_name" placeholder="Nom" className="formContact__field" required></input>
-          </div>
-
-          <div>
-            <label for="c_email"></label>
-            <input id="c_email" type="email" name="c_email" placeholder="Adresse email" className="formContact__field" required></input>
-          </div>
-
-          <div >
-            <label for="body"></label>
-            <textarea id="c_message" type="text" name="body" placeholder="Votre message" className="formContact__field" rows="6" required></textarea>
-          </div>
-          <input type="hidden" name="subject" value="Demande de contact"></input>
-          <input className="formContact__field--submit" type="submit" value="Envoyer votre message"/>
-        </form>
-*/

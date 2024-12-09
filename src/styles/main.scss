@@ -25,54 +25,87 @@
 
 /* image d'accueil */
 .welcome {
-  position: relative;
-  margin-top: 50px;
+  margin: 0px 100px 0px 0px;
+  display: flex;
+
+  &__block1 {
+    width: 25vw;
+    height: 25vw;
+    aspect-ratio: 1 / 1;
+    background-color: $blockB-color;
+    z-index: 0;
+  }
+
+  &__block2 {
+    width: 70vw;
+    height: 45vw;
+    background-color: $secondaryB-color;
+    margin-left: 40px;
+    padding: 40px;
+    z-index: 1;
+  }
+
+  &__pictureAccueil {
+    position: absolute;
+    top: 116px;
+    left: 40px;
+    width: 50vw;
+    height: auto;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+  }
 
   &__container {
-    //position: absolute;
-    width: 100%;
-
-    &--block {
-      position: absolute;
-      top: 20%;
-      left: 10%;
-      transform: translate(-10%, -20%);
-      width: 100px;
-      height: 100px;
-      background-color: $blockB-color;
-      z-index: 1;
-    }
-
-    &--picture {
-      position: absolute;
-      top: 0%;
-      left: 10%;
-      transform: translate(-10%, 0%);
-      width: 40%;
-      height: auto;
-      //height: 600px;
-      //max-height: 800px;
-      display: block;
-      object-fit: cover;
-      overflow: hidden;
-      border-radius: 5px;
-      margin-left: 100px;
-      filter: brightness(0.95);
-      z-index: 2;
-    }
+    position: absolute;
+    top: 96px;
+    left: 35vw;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: right;
+    width: 55vw;
+    height: 40vw;
+    z-index: 3;
 
     &--banner {
-      position: absolute;
-      top: -50%;
-      left: 70%;
-      transform: translate(-70%, 50%);
       color: $primaryT-color;
-      font-size: 64px;
-      text-align: right;
-      width: 50%;
-      padding: 0px 20px;
-      z-index: 3;
-      //text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+      font-size: 55px;
+      margin-bottom: 10px;
+    }
+
+    &__ident {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+
+      &--pictureProfile {
+        width: 10vw;
+        height: 10vw;
+        border-radius: 20vw;
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+        z-index: 4;
+      }
+
+      &--sub {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        &--text1 {
+          color: $secondaryT-color;
+          font-size: 30px;
+          letter-spacing: 2px;
+          margin: 5px 0px 0px 10px;
+        }
+  
+        &--text2 {
+          color: $secondaryT-color;
+          font-size: 24px;
+          font-style: italic;
+          margin: 0px 0px 5px 10px;  
+        }
+      }
     }
   }
 }
