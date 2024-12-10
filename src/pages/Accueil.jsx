@@ -19,18 +19,18 @@ function Accueil({ projets }) {
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
+      
+    } else {
+      window.scrollTo(0, 0);
     }
   }, [location]);
-
-  /* tableau des compétences */
-  const skills = skillData;
 
   return (
     <div className="main">
 
       {/* section Accueil haut de page */}
       <section className="welcome" id="welcome">
-        <Element  name="welcome"></Element>
+        <Element name="welcome"></Element>
         <span className="welcome__block1"></span>
         <span className="welcome__block2"></span>
         <img className="welcome__pictureAccueil" src={pictureAccueil} alt="Paysage de montagne" />
@@ -49,7 +49,7 @@ function Accueil({ projets }) {
 
       {/* section Services */}
       <section className="block" id="services">
-        <Element  name="services" className="block__title">Mes services</Element>          
+        <Element  name="services" className="block__title">Services</Element>          
         <div className="block__line"></div>
       </section>
 
@@ -74,20 +74,25 @@ function Accueil({ projets }) {
       <section className="block" id="competences">
         <Element  name="competences" className="block__title">Compétences</Element>
         <div className="block__line"></div>
+        <p className="block__text">Développement</p>
         <div className="skillsContainer">
-          {skills.map(skill => (
+          {skillData.filter(skill => skill.type === "1").map(skill => (
             <div key={skill.id} className="skillsContainer__item">
               <img src={require(`../assets/tech/${skill.logo}`)} alt={skill.skill} className="skillsContainer__logo" />
               <p className="skillsContainer__title">{skill.title}</p>
             </div>
           ))}
         </div>
-        <p className="block__text">
-          Lorem ipsum odor amet, consectetuer adipiscing elit. Ullamcorper cubilia cras tincidunt nulla cubilia 
-          vehicula commodo amet? Hac augue vestibulum enim sem ridiculus platea. Penatibus sed rhoncus conubia 
-          sapien natoque volutpat montes maecenas. Etiam laoreet dui, nibh nec cras id facilisis ac. Consectetur 
-          nunc at pellentesque at penatibus penatibus curae lorem. Ipsum risus faucibus; class commodo tincidunt fringilla.
-        </p>
+        <div className="block__line"></div>
+        <p className="block__text">Outils et SEO</p>
+        <div className="skillsContainer">
+          {skillData.filter(skill => skill.type === "2").map(skill => (
+            <div key={skill.id} className="skillsContainer__item">
+              <img src={require(`../assets/tech/${skill.logo}`)} alt={skill.skill} className="skillsContainer__logo" />
+              <p className="skillsContainer__title">{skill.title}</p>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* section Contact */}

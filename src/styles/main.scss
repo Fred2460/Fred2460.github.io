@@ -51,7 +51,7 @@
     left: 40px;
     width: 50vw;
     height: auto;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+    //box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
     z-index: 2;
   }
 
@@ -128,6 +128,22 @@
     margin-bottom: 40px;
     font-weight: 500;
     color: $secondaryT-color;
+  
+    &--h1 {
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      font-size: 46px;
+      font-weight: 700;
+      color: $secondaryT-color;
+    }
+
+    &--h2 {
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-top: 0;
+      margin-bottom: 0;
+      color: $secondaryT-color;
+    }
   }
 
   &__line {
@@ -140,11 +156,7 @@
   &__text {   /* ******************************************************* A VERIFIER ************ */
     font-family: $font-family-base;
     color: $secondaryT-color;
-    font-size: 16px;
-
-    &--h2 {
-      font-size: 20px;
-    }
+    font-size: 20px;
   }
 }
 
@@ -160,7 +172,7 @@
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+  gap: 30px;
   padding: 50px;
   border-radius: 25px;
   background-color: $secondaryB-color;
@@ -184,8 +196,6 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
-    //display: grid;
-    //grid-template-rows: auto 1fr auto;
     width: 100%;
     aspect-ratio: 1 / 1;
     cursor: pointer;
@@ -194,6 +204,7 @@
     border: 2px solid $blockB-color;
     gap: 5px;
 
+    /*
     &--overlay {
       position: absolute;
       border-radius: 10px;
@@ -204,11 +215,9 @@
       background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 10, 10, 0) 42%, rgba(4, 4, 4, 0.205) 99.99%, rgba(0, 0, 0, 0.5) 100%);
       z-index: 1; 
     }
+*/
 
     &__content {
-      //display: flex;
-      //flex-direction: column;
-      //justify-content: space-between;
       display: grid;
       grid-template-rows: auto 1fr auto;
       width: 100%;
@@ -217,17 +226,13 @@
       z-index: 1;
 
       &--title {
-        //position: relative;
         align-items: center;
         justify-content: center;
         color: $blockT-color;
         background-color: $blockB-color;
-        //padding: 5px;
         border-radius: 4px 4px 0 0;
-        //text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         font-size: 18px;
         font-weight: 500;
-        //margin: 20px;
         margin: 0;
         padding: 5px 5px 10px 5px;
         text-align: center;
@@ -235,15 +240,11 @@
       }
 
       &--cover {
-        //position: absolute;
         width: 100%;
-        //height: 70%;
         height: 100%;
-        //border-radius: 10px;
         object-fit: contain;
         background-color: white;
         padding: 3px;
-        //border-top: 1px solid $blockB-color;
         border-bottom: 1px solid $blockB-color;
         z-index: 0;
       }
@@ -259,12 +260,7 @@
       }
 
       &--tags {
-        //position: relative;
         display: inline-flex;
-        //display: flex;
-        //flex-wrap: wrap;
-        //justify-content: center;
-        //gap: 5px;
         color: $blockT-color;
         background-color: $blockB-color;
         border-radius: 15px;
@@ -272,8 +268,6 @@
         font-size: 14px;
         font-weight: 500;
         list-style: none;
-        //margin: 5px 5px 5px 5px;
-        //margin: 10px;
         z-index: 3;
       }
     }
@@ -310,13 +304,19 @@
 
 
 /* ****************** Style pour la page A-PROPOS ********************** */
+.apropos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-.valeurs {
+.experiences {
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    margin: 40px 120px 40px 120px;
+    margin: 0 120px 40px 120px;
     gap: 30px;
   
     @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {

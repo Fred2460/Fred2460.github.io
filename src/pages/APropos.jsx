@@ -1,45 +1,59 @@
 import '../styles/main.scss'
 import Collapse from '../components/Collapse'
+import { HiArrowNarrowRight } from "react-icons/hi"
+import { PiArrowCircleRightFill } from "react-icons/pi"
 
 function APropos() {
 
   return (
     <div className="main">
       
-      
-      
-      
-      <div className="valeurs">
+      <div className="apropos">
+        <h1 className="block__title--h1">Présentation</h1>
+        <h2 className="block__title--h2">Un ingénieur senior devient... Développeur Web junior</h2>
+      </div>
+
+      <div className="experiences">
+        <p className="block__text">
+          Au delà de mes compétences de développement Web, par mon expérience des entreprises, je peux vous apporter une bonne compréhension de vos clients:<br/><br/>
+          <PiArrowCircleRightFill /> Parler le même langage que vos prospects et clients<br/>
+          <PiArrowCircleRightFill /> Comprendre rapidement leurs organisations et contraintes<br/>
+          <PiArrowCircleRightFill /> Adapter le déroulement des projets à leurs besoins et mode de décision
+        </p>
+        <article>
+          <Collapse title="Excellence Opérationnelle">
+            <span>Un peu comme une synthèse de mes autres expériences professionnelles, j'ai contribué à <strong>déployer une démarche 
+              d'Excellence Opérationnelle</strong> sur 6 usines à tous les niveaux de l'entreprise et avec l'ensemble des salariés:<br />
+              <HiArrowNarrowRight /> Ancrer une <strong>démarche d'amélioration continue</strong> auprès de l'ensemble des salariés,<br />
+              <HiArrowNarrowRight /> Multiplier le <strong>travail en équipes pluridisciplinaires</strong>,<br />
+              <HiArrowNarrowRight /> Utiliser des méthodes de résolution de problèmes,<br />
+              <HiArrowNarrowRight /> Renforcer et systématiser la communication,<br />
+              <HiArrowNarrowRight /> Déployer les <strong>méthodes LEAN</strong> (5S, Kaizen, kanban, Value Stream Management, ...).</span>
+          </Collapse>
+        </article>
 
         <article>
-          <Collapse title="Fiabilité">
-            <span>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, 
-              et toutes les informations sont régulièrement vérifiées par nos équipes.</span>
+          <Collapse title="Relation clients en B2B">
+            <span>Mes responsabilités opérationnelles m'ont amené à <strong>gérer les relations clients professionnels en direct</strong> dans différentes positions:<br/>
+            <strong> <HiArrowNarrowRight /> Responsable Avant-Vente</strong> pour construire, chiffrer et négocier des propositions commerciales de services;<br/>
+            <strong> <HiArrowNarrowRight /> Gestionnaire d'Affaire</strong> pour exécuter les contrats selon les spécificités, fournir le reporting, proposer des solutions d'amélioration, facturer les prestations;</span>
           </Collapse>
         </article>
 
         <article>
-          <Collapse title="Respect">
-            <span>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation 
-              du voisinage entraînera une exclusion de notre plateforme.</span>
+          <Collapse title="Management d'équipes">
+            <span>Mon expérience m'a permis d'assurer des fonctions de management d'équipes importantes de production, de direction
+              de site industriels ainsi que de <strong>gestion de projets</strong>.</span>
           </Collapse>
         </article>
-        
+
         <article>
-          <Collapse title="Service">
-            <span>La qualité du service est au coeur de notre engagement chez Kasa. Nous veillons à ce que chaque interaction, 
-              que ce soit avec nos hôtes ou nos locataires, soit empreinte de respect et de bienveillance.</span>
+          <Collapse title="Secteurs d'activité">
+            <span>Ingénieur expérimenté dans le secteur de <strong>l'industrie de production</strong> grandes et moyennes séries (cosmétique, automobile, plasturgie) 
+              et les secteurs des <strong>services aux opérateurs de Télécom</strong>.</span>
           </Collapse>
         </article>
-        
-        <article>
-          <Collapse title="Sécurité">
-            <span>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond 
-              aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela 
-              permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur 
-              la sécurité domestique pour nos hôtes.</span>
-          </Collapse>
-        </article>
+
       </div>
     </div>
   )

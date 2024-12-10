@@ -51,12 +51,36 @@
         "id": "a1009",
         "title": "Git",
         "logo": "git.png",
-        "type": "1"
+        "type": "2"
     },
     {
         "id": "a1010",
         "title": "GitHub",
         "logo": "github.png",
-        "type": "1"
+        "type": "2"
+    },
+    {
+        "id": "a1011",
+        "title": "Google Lighthouse",
+        "logo": "lighthouse.png",
+        "type": "2"
+    },
+    {
+        "id": "a1012",
+        "title": "axe DevTools",
+        "logo": "axe_devtools.png",
+        "type": "2"
+    },
+    {
+        "id": "a1013",
+        "title": "Schema.org",
+        "logo": "schema.org.png",
+        "type": "2"
+    },
+    {
+        "id": "a1014",
+        "title": "W3C WAI",
+        "logo": "w3c_wai.png",
+        "type": "2"
     }
 ]
