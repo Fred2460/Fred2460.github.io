@@ -26,11 +26,12 @@
 /* image d'accueil */
 .welcome {
   margin: 0px 100px 0px 0px;
+  padding-top: 76px;
   display: flex;
 
   &__block1 {
-    width: 25vw;
-    height: 25vw;
+    width: 20vw;
+    height: 20vw;
     aspect-ratio: 1 / 1;
     background-color: $blockB-color;
     z-index: 0;
@@ -47,11 +48,10 @@
 
   &__pictureAccueil {
     position: absolute;
-    top: 116px;
+    top: 192px;
     left: 40px;
     width: 50vw;
     height: auto;
-    //box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
     z-index: 2;
   }
 
@@ -59,7 +59,7 @@
     position: absolute;
     top: 96px;
     left: 35vw;
-    padding-right: 30px;
+    padding-right: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -84,6 +84,7 @@
         height: 10vw;
         border-radius: 20vw;
         box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+        object-fit: cover;
         z-index: 4;
       }
 
@@ -162,8 +163,60 @@
 
 /* ****************** style pour services ************************ */
 .services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 50px;
 
+  &__block {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    //border: 1px solid $blockB-color;
+    background-color: $primaryB-color;
+    box-shadow: 10px 5px 5px $blockB-color;
+    border-radius: 5px;
+    padding: 10px;
 
+    &--icone {
+      justify-content: start;
+      font-size: 50px;
+      color: $blockB-color;
+    }
+
+    &--title {
+      font-size: 24px;
+      color: $primaryT-color;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    
+    &--texth4 {
+      font-size: 20px;
+      color: $secondaryB-color;
+      background-color: $blockB-color;
+      opacity: 0.9;
+      margin: 5px 0 5px 0;
+      border-radius: 5px;
+      padding: 5px;
+      text-align: center;
+    }
+
+    &--text {
+      font-size: 16px;
+      color: $secondaryT-color;
+      margin-top: 5px;
+      margin-bottom: 10px;
+
+      &--B {
+        color: $secondaryT-color;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
 }
 
 
@@ -229,7 +282,7 @@
         align-items: center;
         justify-content: center;
         color: $blockT-color;
-        background-color: $blockB-color;
+        background-color: $tertiaryB-color;
         border-radius: 4px 4px 0 0;
         font-size: 18px;
         font-weight: 500;
