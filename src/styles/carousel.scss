@@ -9,7 +9,9 @@
         width: 100%;
         height: auto;
         border-radius: 25px;
-        object-fit: cover;
+        object-fit: contain;
+        border-top: 1px solid $tertiaryB-color;
+        border-bottom: 1px solid $tertiaryB-color;
     }
 
     &__previousButton--active, &__nextButton--active {
@@ -18,7 +20,9 @@
         transform: translateY(-50%);
         color: white;
         width: 100px;
-        background: none;
+        background-color: $blockB-color;
+        opacity: 0.3;
+        border-radius: 25px;
         border: none;
         padding: 20px;
         cursor: pointer;

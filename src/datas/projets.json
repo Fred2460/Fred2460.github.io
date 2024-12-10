@@ -4,11 +4,11 @@
 		"title": "Interface de l’agence de voyage Booki",
 		"cover": "booki_cover.png",
 		"pictures": [
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-2.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-3.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-4.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-5.jpg"
+			"booki_principale.png",
+			"booki_filtres.png",
+			"booki_activites.png",
+			"booki_mobile.png",
+			"booki_figma.png"
 		],
 		"description": "Développer l’interface Responsive de l’agence de voyage Booki",
 		"location": "Intégration web avec HTML & CSS",
@@ -26,14 +26,14 @@
 	{
 		"id": "b9123946",
 		"title": "Page web pour l’architecte Sophie Bluel",
-		"cover": "booki_cover.png",
+		"cover": "bluel_cover.png",
 		"pictures": [
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-1.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-2.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-3.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-4.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-5.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-6.jpg"
+			"bluel_principale.png",
+			"bluel_filtre.png",
+			"bluel_contact.png",
+			"bluel_login_signup.png",
+			"bluel_galerie.png",
+			"bluel_ajout.png"
 		],
 		"description": "Créer une page web dynamique Javascript pour l’architecte Sophie Bluel",
 		"location": "Développement web avec JavaScript",
@@ -52,13 +52,15 @@
 	},
 	{
 		"id": "46d188c5",
-		"title": "Débugger et optimiser le site du photographe Carducci",
-		"cover": "booki_cover.png",
+		"title": "Débug et optimisation du site du photographe N.Carducci",
+		"cover": "nina_cover.png",
 		"pictures": [
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-2-1.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-2-2.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-2-3.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-2-4.jpg"
+			"nina_principale.png",
+			"nina_galerie1.png",
+			"nina_galerie2.png",
+			"nina_perf.png",
+			"nina_acc.png",
+			"nina_contrast.png"
 		],
 		"description": "Optimiser la performance d’un site, son accessibilité, ses meilleures pratiques et son référencement naturel SEO",
 		"location": "Optimisation et débug d’un site web",
@@ -79,12 +81,11 @@
 	{
 		"id": "7af00cd6",
 		"title": "Agence de location immobilière Kasa",
-		"cover": "booki_cover.png",
+		"cover": "kasa_cover.png",
 		"pictures": [
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-1.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-2.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-3.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-4.jpg"
+			"kasa_principale.png",
+			"kasa_apropos.png",
+			"kasa_logement.png"
 		],
 		"description": "Créer avec React l’application web de l’agence de location immobilière Kasa",
 		"location": "Développement web avec React",
@@ -106,9 +107,14 @@
 	{
 		"id": "cb02d69b",
 		"title": "Site de notation de livres Vieux Grimoire",
-		"cover": "booki_cover.png",
+		"cover": "vieux-grimoire_cover.png",
 		"pictures": [
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-19-1.jpg"
+			"vieux-grimoire_principale.png",
+			"vieux-grimoire_login_signup.png",
+			"vieux-grimoire_modif_suppr.png",
+			"vieux-grimoire_rating.png",
+			"vieux-grimoire_top3_rating.png",
+			"vieux-grimoire_mongodb_atlas.png"
 		],
 		"description": "Créer avec un serveur avec Node et Express, le back-end du site de notation de livres Vieux Grimoire",
 		"location": "Développement back-end avec NodeJS",
@@ -129,15 +135,13 @@
 	},
 	{
 		"id": "0979876d",
-		"title": "Projet de développement web Menu Maker",
-		"cover": "booki_cover.png",
+		"title": "Organisation projet de développement web Menu Maker",
+		"cover": "menu_maker_cover.png",
 		"pictures": [
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-1.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-2.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-3.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-4.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-5.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-6.jpg"
+			"menu_maker_maquette1.png",
+			"menu_maker_maquette2.png",
+			"menu_maker_notion_backlog.png",
+			"menu_maker_notion_planning.png"
 		],
 		"description": "Piloter l’organisation et le déroulement du projet de développement web Menu Maker by Qwenta",
 		"location": "Gestion de projet et outils de développement",
