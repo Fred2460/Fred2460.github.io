@@ -11,7 +11,6 @@ function ContactForm() {
     const subject = "Demande de contact";
     const fullMessage = `${message}\n\nNom du contact : ${name}\nEmail de contact : ${email}`;
     const mailtoLink = `mailto:contact@digitale-syntropie.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(fullMessage)}`;
-    console.log(mailtoLink); // Ajout de cette ligne pour vérifier le lien
     window.location.href = mailtoLink;
   };
 

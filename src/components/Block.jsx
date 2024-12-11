@@ -1,10 +1,7 @@
 import { useState } from 'react'
-//import PropTypes from "prop-types"
 import "../styles/main.scss"
 
 
-
-//function Block ({ icon: IconComponent, title, text }) {
 function Block ({ title, tech, icone, text1, text2 }) {
 
   const [isActive, setIsActive] = useState(false);
@@ -12,9 +9,6 @@ function Block ({ title, tech, icone, text1, text2 }) {
   const toggleActive = () => {
     setIsActive(!isActive);
   };
-
-    //const [isFulldisplay, setFulldisplay] = useState(false);
-    //{isOpen && <div className="collapseHeader__content">{children}</div>}
 
     return (
       <div className={`services__block ${isActive ? 'active' : ''}`}
@@ -30,8 +24,3 @@ function Block ({ title, tech, icone, text1, text2 }) {
   };
   
   export default Block;
-
-  /*
-  <div className={`services__block ${isActive ? 'active' : ''}`}
-onClick={() => setIsActive(!isActive)}>
-*/
