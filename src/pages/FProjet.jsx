@@ -25,7 +25,7 @@ function FProjet() {
       <div className="infoBlock">
         <div className='identification'> 
           <h1 className='identification__title'>{projet.description}</h1>
-          <p className='identification__location'>{projet.location}</p>
+          <p className='identification__theme'>{projet.theme}</p>
           <div className='identification__tags'> {/* tags du projet */}
             {projet.tags.map((tag, index) => (
               <p key={index} className={tag !== undefined ? 'identification__tags--tag' : ''}>

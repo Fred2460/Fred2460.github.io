@@ -26,12 +26,12 @@ function Accueil({ projets }) {
     if (location.hash) {
       const element = document.querySelector(location.hash);
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        element.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" });
       }
-      
-    } else {
-      window.scrollTo(0, 0);
     }
+//    } else {
+//      window.scrollTo(0, 0);
+//    }
   }, [location]);
 
   return (
@@ -107,7 +107,7 @@ function Accueil({ projets }) {
             tech="Appelez un freelance"
             icone={<SiFreelancer />}
             text1="Pour mettre en oeuvre vos projets, il vous manque des compétences ou simplement des ressources. Renforcez votre équipe selon vos besoins."
-            text2="Gagnez en rapidité et en flexibilités!"
+            text2="Gagnez en rapidité et en flexibilité!"
           />
 
         </div>

@@ -11,7 +11,7 @@
 			"booki_figma.png"
 		],
 		"description": "Développer l’interface Responsive de l’agence de voyage Booki",
-		"location": "Intégration web avec HTML & CSS",
+		"theme": "Intégration web avec HTML & CSS",
 		"equipments": [
 			"Intégrer du contenu conformément à une maquette Figma avec HTML et CSS",
 			"Implémenter une interface responsive avec HTML et CSS"
@@ -36,7 +36,7 @@
 			"bluel_ajout.png"
 		],
 		"description": "Créer une page web dynamique Javascript pour l’architecte Sophie Bluel",
-		"location": "Développement web avec JavaScript",
+		"theme": "Développement web avec JavaScript",
 		"equipments": [
 			"Gérer la page de connexion pour l’administration du site et récupérer les données utilisateurs dans le JavaScript via des formulaires",
 			"Manipuler les éléments du DOM avec JavaScript",
@@ -63,7 +63,7 @@
 			"nina_contrast.png"
 		],
 		"description": "Optimiser la performance d’un site, son accessibilité, ses meilleures pratiques et son référencement naturel SEO",
-		"location": "Optimisation et débug d’un site web",
+		"theme": "Optimisation et débug d’un site web",
 		"equipments": [
 			"Optimiser les performances d’utilisation d’un site web",
 			"Débugger un site grâce aux Chrome DevTools",
@@ -88,7 +88,7 @@
 			"kasa_logement.png"
 		],
 		"description": "Créer avec React l’application web de l’agence de location immobilière Kasa",
-		"location": "Développement web avec React",
+		"theme": "Développement web avec React",
 		"equipments": [
 			"Initialiser une application avec Create React App",
 			"Configurer la navigation entre les pages de l'application avec React Router",
@@ -117,7 +117,7 @@
 			"vieux-grimoire_mongodb_atlas.png"
 		],
 		"description": "Créer avec un serveur avec Node et Express, le back-end du site de notation de livres Vieux Grimoire",
-		"location": "Développement back-end avec NodeJS",
+		"theme": "Développement back-end avec NodeJS",
 		"equipments": [
 			"Implémenter un modèle logique de données avec une architecture MVC (Modèle-Vue-Contrôleur) avec Mongoose",
 			"Mettre en œuvre des opérations CRUD (Créer, Lire, Mettre à jour, Supprimer) de manière sécurisée",
@@ -144,7 +144,7 @@
 			"menu_maker_notion_planning.png"
 		],
 		"description": "Piloter l’organisation et le déroulement du projet de développement web Menu Maker by Qwenta",
-		"location": "Gestion de projet et outils de développement",
+		"theme": "Gestion de projet et outils de développement",
 		"equipments": [
 			"Suivre le déroulement du projet grâce à un outil de gestion de projet",
 			"Rédiger les spécifications techniques d'un projet web à partir de besoins fonctionnels",

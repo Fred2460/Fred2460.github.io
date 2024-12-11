@@ -1,9 +1,26 @@
 import '../styles/main.scss'
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Collapse from '../components/Collapse'
 import { HiArrowNarrowRight } from "react-icons/hi"
 import { PiArrowCircleRightFill } from "react-icons/pi"
 
 function APropos() {
+
+    /* gestion des redirections */
+    const location = useLocation();
+
+    useEffect(() => {
+      if (location.hash) {
+        const element = document.querySelector(location.hash);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" });
+        }
+      }
+  //    } else {
+  //      window.scrollTo(0, 0);
+  //    }
+    }, [location]);
 
   return (
     <div className="main">

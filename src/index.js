@@ -7,6 +7,7 @@ import FProjet from './pages/FProjet'
 import Error from './pages/Erreur'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop';
 import createGlobalStyle from 'styled-components'
 import './styles/index.scss';
 import projetsData from './datas/projets.json'
@@ -27,6 +28,7 @@ root.render(
   <React.StrictMode>
     <Router>
       <GlobalStyle />
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<Accueil projets={projetsData} />} />
