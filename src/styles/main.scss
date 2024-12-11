@@ -26,17 +26,17 @@
   margin: 0px 100px 0px 100px;
   text-align: center;
   background-color: $secondaryB-color;
-  padding: 30px;
+  padding: 60px 30px 30px 30px;
   border-radius: 5px;
 
   @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
     margin: 0px 50px 0px 50px;
-    padding: 24px;
+    padding: 50px 24px 24px 24px;
   }
     
   @media (max-width: $breakpoint-mobile) {
     margin: 0px 20px 0px 20px;
-    padding: 19px;
+    padding: 40px 20px 20px 20px;
   }
 
   &__title {
@@ -117,14 +117,19 @@
   &__text {
     font-family: $font-family-base;
     color: $secondaryT-color;
+    background-color: $secondaryB-color;
+    border-radius: 5px;
+    padding: 30px;
     font-size: 20px;
 
     @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
       font-size: 16px;
+      padding: 25px;
     }
       
     @media (max-width: $breakpoint-mobile) {
       font-size: 12px;
+      padding: 20px;
     }
   }
 }
