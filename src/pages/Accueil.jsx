@@ -3,6 +3,7 @@ import pictureProfile from '../assets/frederic_flipo_2023_n&b.jpg';
 import '../styles/main.scss';
 import Card from '../components/Card';
 import Block from '../components/Block';
+import LocalData from '../components/LocalData';
 import { Element } from "react-scroll";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
@@ -37,10 +38,23 @@ function Accueil({ projets }) {
 
       <Helmet>
         <html lang="fr" />
-        <title>Accueil</title>
-        <meta name="description" content="Page d'accueil de mon site" />
+        <title>Frédéric FLIPO - Développeur Web freelance</title>
+        <meta name="description" content="Page d'accueil du site de Frederic FLIPO, Développeur Web freelance." />
         <meta name="keywords" content="accueil, home, page principale" />
         <meta name="author" content="Frederic FLIPO" />
+        <meta charset="UTF-8" />
+        <meta name="language" content="fr-FR" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Frederic FLIPO - Développeur Web freelance" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://frederic.flipo.github.io/assets/images/image_github_ffl.png" />
+        <meta property="og:url" content="https://frederic.flipo.github.io/" />
+        <meta property="og:description" content="Créez de la valeur dans l'écosystème internet" />
+        <meta name="twitter:title" content="Frederic FLIPO - Développeur Web freelance" />
+        <meta name="twitter:description" content="Créez de la valeur dans l'écosystème internet" />
+        <meta name="twitter:image" content="https://frederic.flipo.github.io/assets/images/image_github_ffl.png" />
+        <meta name="twitter:url" content="https://frederic.flipo.github.io/" />
+        <LocalData />
       </Helmet>
 
       {/* section Accueil haut de page */}
@@ -54,7 +68,7 @@ function Accueil({ projets }) {
           <div className="welcome__container__ident">
             <img className="welcome__container__ident--pictureProfile" src={pictureProfile} alt="Profile" />
             <div className="welcome__container__ident--sub">
-              <h2 className="welcome__container__ident--sub--text1">Frederic FLIPO</h2>  
+              <h2 className="welcome__container__ident--sub--text1">Frédéric FLIPO</h2>  
               <h3 className="welcome__container__ident--sub--text2">Développeur Web</h3>
               <p className="block__text">Freelance</p>
             </div>
