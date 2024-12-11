@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import skillData from '../datas/skills.json'
 import ContactForm from '../components/ContactForm';
+import { Helmet } from 'react-helmet';
 
 // Icônes Services
 import { MdOutlineScreenSearchDesktop } from "react-icons/md"; // Visibilité Front-end
@@ -34,6 +35,14 @@ function Accueil({ projets }) {
   return (
     <div className="main">
 
+      <Helmet>
+        <html lang="fr" />
+        <title>Accueil</title>
+        <meta name="description" content="Page d'accueil de mon site" />
+        <meta name="keywords" content="accueil, home, page principale" />
+        <meta name="author" content="Frederic FLIPO" />
+      </Helmet>
+
       {/* section Accueil haut de page */}
       <section className="welcome" id="welcome">
         <Element name="welcome"></Element>
@@ -59,7 +68,7 @@ function Accueil({ projets }) {
         <Element  name="services" className="block__title">Services</Element>          
         <div className="block__line"></div>
         <div className="services">
-          <Block 
+          <Block
             title="Augmentez votre visibilité"
             tech="Front-end"
             icone={<MdOutlineScreenSearchDesktop />}
@@ -91,7 +100,7 @@ function Accueil({ projets }) {
             text2="Soyez facile à trouver dans votre zone géographique!"
           />
 
-          <Block 
+          <Block
             title="Soyez plus inclusifs pour le handicap"
             tech="Accessibilité"
             icone={<MdOutlineAccessibleForward />}
