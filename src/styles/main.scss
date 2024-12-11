@@ -1,4 +1,4 @@
-/* ****************** Style pour les pages ACCUEIL, A-PROPOS et ERREUR ********************** */
+/* ****************** Style pour les pages ACCUEIL, A-PROPOS, ERREUR et composant BLOCK ********************** */
 
 @import 'variables';
 
@@ -10,15 +10,122 @@
   gap: 50px;
   font-family: $font-family-base;
   background-color: $primaryB-color;
-
+  
   @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
-    margin-left: 50px;
-    margin-right: 50px;
+    gap: 35px;
   }
 
   @media (max-width: $breakpoint-mobile) {
-    margin-left: 20px;
-    margin-right: 20px;
+    gap: 25px;
+  }
+}
+
+
+/* ****************** blocs page d'accueil ********************** */
+.block {
+  margin: 0px 100px 0px 100px;
+  text-align: center;
+  background-color: $secondaryB-color;
+  padding: 30px;
+  border-radius: 5px;
+
+  @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+    margin: 0px 50px 0px 50px;
+    padding: 24px;
+  }
+    
+  @media (max-width: $breakpoint-mobile) {
+    margin: 0px 20px 0px 20px;
+    padding: 19px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    color: $secondaryT-color;
+
+    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      font-size: 20px;
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
+      
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 16px;
+      margin-top: 26px;
+      margin-bottom: 26px;
+    }
+  
+    &--h1 {
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      font-size: 46px;
+      font-weight: 700;
+      color: $secondaryT-color;
+
+      @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+        letter-spacing: 8px;
+        font-size: 36px;
+      }
+        
+      @media (max-width: $breakpoint-mobile) {
+        letter-spacing: 6px;
+        font-size: 28px;
+      }
+    }
+
+    &--h2 {
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: 500;
+      margin-top: 0;
+      margin-bottom: 0;
+      color: $secondaryT-color;
+      text-align: center;
+
+      @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+        font-size: 18px;
+      }
+        
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__line {
+    width: 55px;
+    height: 1px;
+    margin: 30px auto;
+    background: $secondaryT-color;
+
+    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      width: 44px;
+      margin: 24px auto;
+    }
+      
+    @media (max-width: $breakpoint-mobile) {
+      width: 35px;
+      margin: 18px auto;
+    }
+  }
+
+  &__text {
+    font-family: $font-family-base;
+    color: $secondaryT-color;
+    font-size: 20px;
+
+    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      font-size: 16px;
+    }
+      
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 12px;
+    }
   }
 }
 
@@ -28,6 +135,14 @@
   margin: 0px 100px 0px 0px;
   padding-top: 76px;
   display: flex;
+
+  @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+    margin: 0px 50px 0px 0px;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    margin: 0px 20px 0px 0px;
+  }
 
   &__block1 {
     width: 20vw;
@@ -57,7 +172,7 @@
 
   &__container {
     position: absolute;
-    top: 96px;
+    top: 126px;
     left: 35vw;
     padding-right: 10px;
     display: flex;
@@ -72,6 +187,16 @@
       color: $primaryT-color;
       font-size: 55px;
       margin-bottom: 10px;
+      
+      @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+        font-size: 36px;
+        margin-bottom: 5px;
+      }
+        
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 24px;
+        margin-bottom: 0px;
+      }
     }
 
     &__ident {
@@ -98,13 +223,33 @@
           font-size: 30px;
           letter-spacing: 2px;
           margin: 5px 0px 0px 10px;
+
+          @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+            font-size: 20px;
+            margin: 3px 0px 0px 5px;
+          }
+            
+          @media (max-width: $breakpoint-mobile) {
+            font-size: 13px;
+            margin: 0px 0px 0px 0px;
+          }
         }
   
         &--text2 {
           color: $secondaryT-color;
           font-size: 24px;
           font-style: italic;
-          margin: 0px 0px 5px 10px;  
+          margin: 0px 0px 5px 10px;
+          
+          @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+            font-size: 16px;
+            margin: 0px 0px 0px 5px;
+          }
+            
+          @media (max-width: $breakpoint-mobile) {
+            font-size: 11px;
+            margin: 0px 0px 0px 0px;
+          }
         }
       }
     }
@@ -112,67 +257,29 @@
 }
 
 
-/* ****************** blocs page d'accueil ********************** */
-
-.block {
-  margin: 0px 100px 0px 100px;
-  text-align: center;
-  background-color: $secondaryB-color;
-  padding: 76px 30px 30px 30px;
-  border-radius: 5px;
-
-  &__title {
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 25px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    font-weight: 500;
-    color: $secondaryT-color;
-  
-    &--h1 {
-      text-transform: uppercase;
-      letter-spacing: 10px;
-      font-size: 46px;
-      font-weight: 700;
-      color: $secondaryT-color;
-    }
-
-    &--h2 {
-      text-transform: uppercase;
-      font-weight: 500;
-      margin-top: 0;
-      margin-bottom: 0;
-      color: $secondaryT-color;
-    }
-  }
-
-  &__line {
-    width: 55px;
-    height: 1px;
-    margin: 30px auto;
-    background: $secondaryT-color;
-  }
-
-  &__text {   /* ******************************************************* A VERIFIER ************ */
-    font-family: $font-family-base;
-    color: $secondaryT-color;
-    font-size: 20px;
-  }
-}
-
-/* ****************** style pour services ************************ */
+/* ****************** services ************************ */
 .services {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  padding: 50px;
+  padding: 45px;
+
+  @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 30px;
+  }
+    
+  @media (max-width: $breakpoint-mobile) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 15px;
+  }
 
   &__block {
     display: flex;
     flex-direction: column;
     text-align: start;
-    //border: 1px solid $blockB-color;
     background-color: $primaryB-color;
     box-shadow: 10px 5px 5px $blockB-color;
     border-radius: 5px;
@@ -182,13 +289,29 @@
       justify-content: start;
       font-size: 50px;
       color: $blockB-color;
+
+      @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+        font-size: 40px;
+      }
+        
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 32px;
+      }
     }
 
     &--title {
-      font-size: 24px;
+      font-size: 22px;
       color: $primaryT-color;
       margin-top: 0;
       margin-bottom: 10px;
+
+      @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+        font-size: 18px;
+      }
+        
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 16px;
+      }
     }
     
     &--texth4 {
@@ -200,6 +323,14 @@
       border-radius: 5px;
       padding: 5px;
       text-align: center;
+
+      @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+        font-size: 16px;
+      }
+        
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 13px;
+      }
     }
 
     &--text {
@@ -208,25 +339,45 @@
       margin-top: 5px;
       margin-bottom: 10px;
 
+      @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+        font-size: 14px;
+        margin-bottom: 7px;
+      }
+        
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 12px;
+        margin-bottom: 4px;
+      }
+
       &--B {
         color: $secondaryT-color;
+        font-size: 16px;
         font-weight: 700;
         text-align: center;
         margin-top: 0;
         margin-bottom: 10px;
+
+        @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+          font-size: 14px;
+          margin-bottom: 7px;
+        }
+          
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 12px;
+          margin-bottom: 4px;
+        }
       }
     }
   }
 }
 
 
-/* ****************** Style pour la gallerie de la page ACCUEIL ********************** */
-
+/* ****************** galerie portfolio ********************** */
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  padding: 50px;
+  padding: 45px;
   border-radius: 25px;
   background-color: $secondaryB-color;
 
@@ -240,7 +391,7 @@
   @media (max-width: $breakpoint-mobile) {
     grid-template-columns: repeat(1, 1fr);
     gap: 15px;
-    padding: 0px;
+    padding: 15px;
     margin-top: 15px;
   }
 
@@ -347,6 +498,16 @@
     width: 80px;
     height: 80px;
     object-fit: contain;
+
+    @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+      width: 64px;
+      height: 64px;
+    }
+      
+    @media (max-width: $breakpoint-mobile) {
+      width: 52px;
+      height: 52px;
+    }
   }
 
   &__title {

@@ -26,12 +26,9 @@ function Accueil({ projets }) {
     if (location.hash) {
       const element = document.querySelector(location.hash);
       if (element) {
-        element.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" });
+        element.scrollIntoView({ behavior: "smooth" });
       }
     }
-//    } else {
-//      window.scrollTo(0, 0);
-//    }
   }, [location]);
 
   return (
