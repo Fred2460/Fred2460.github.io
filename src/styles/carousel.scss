@@ -4,10 +4,15 @@
 
 .carousel {
     position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
 
     &__picture {
         width: 100%;
+        //width: 70vw;
         height: auto;
+        //height: 50vh;
         border-radius: 25px;
         object-fit: contain;
         border-top: 1px solid $tertiaryB-color;
@@ -18,11 +23,9 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        color: white;
+        color: $blockT-color;
         width: 100px;
-        background-color: $blockB-color;
-        opacity: 0.3;
-        border-radius: 25px;
+        background-color: unset;
         border: none;
         padding: 20px;
         cursor: pointer;
@@ -38,25 +41,8 @@
         }
     }
 
-    &__previousButton--inactive, &__nextButton--inactive {
-        display: none;
-    }
-
-    &__previousButton--icone, &__nextButton--icone {
-        font-size: 120px;
-        
-        @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
-            font-size: 75px;
-        }
-            
-        @media (max-width: $breakpoint-mobile) {
-            font-size: 30px;
-        }
-    }
-
     &__previousButton--active {
         left: -30px;
-
         @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
             left: -17px;
         }
@@ -67,15 +53,25 @@
     }
       
     &__nextButton--active {
-        right: 30px;
-
+        right: -15px;
         @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
-            right: 20px;
+            right: -10px;
         }
             
         @media (max-width: $breakpoint-mobile) {
-            right: 10px;
+            right: 0px;
         }
+    }
+
+    &__previousButton--inactive, &__nextButton--inactive {
+        display: none;
+    }
+
+    &__previousButton--icone, &__nextButton--icone {
+        font-size: 5vw;
+        background-color: $blockB-color;
+        opacity: 0.4;
+        border-radius: 5px;
     }
 
     &__slideIndex--active {
@@ -83,10 +79,23 @@
         bottom: 0px;
         left: 50%;
         transform: translateX(-50%);
-        color: white;
+        color: $blockT-color;
         font-size: 16px;
         font-weight: 500;
+        background-color: $blockB-color;
+        opacity: 0.4;
+        padding: 5px 10px 5px 10px;
         border-radius: 5px;
+
+        @media(min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+            font-size: 14px;
+            padding: 4px 8px 4px 8px;
+        }
+            
+        @media (max-width: $breakpoint-mobile) {
+            font-size: 11px;
+            padding: 3px 5px 3px 5px;
+        }
     }
 
     &__slideIndex--inactive {

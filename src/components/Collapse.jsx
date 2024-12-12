@@ -14,7 +14,7 @@ function Collapse ({ title, children }) {
         <div className="collapse">
             <div className="collapseHeader" onClick={toggleCollapse}>
                 <h2 className="collapseHeader__title">{title}</h2>
-                <span className="collapseHeader__chevron">{isOpen ? <IoChevronDown /> : <IoChevronUp />}</span>
+                <span className="collapseHeader__chevron" aria-expanded={isOpen} aria-controls="Contenu détaillé">{isOpen ? <IoChevronDown /> : <IoChevronUp />}</span>
             </div>
             {isOpen && <div className="collapseHeader__content">{children}</div>}
         </div>

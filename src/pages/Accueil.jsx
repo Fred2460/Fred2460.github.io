@@ -58,15 +58,15 @@ function Accueil({ projets }) {
       </Helmet>
 
       {/* section Accueil haut de page */}
-      <section className="welcome" id="welcome">
+      <section className="welcome" id="welcome" role="banner" aria-labelledby="Entête Accueil">
         <Element name="welcome"></Element>
         <span className="welcome__block1"></span>
         <span className="welcome__block2"></span>
-        <img className="welcome__pictureAccueil" src={pictureAccueil} alt="Paysage de montagne" title="Accueil - Paysage de montagne" />
+        <img className="welcome__pictureAccueil" src={pictureAccueil} alt="Paysage de montagne" aria-label="Accueil - Image d'un paysage de montagne" />
         <div className="welcome__container">
           <h1 className="welcome__container--banner">Créez de la valeur dans l'écosystème internet</h1>
           <div className="welcome__container__ident">
-            <img className="welcome__container__ident--pictureProfile" src={pictureProfile} alt="Profile" title="Photo de profile Frederic Flipo" />
+            <img className="welcome__container__ident--pictureProfile" src={pictureProfile} alt="Profile" aria-label="Photo de profile Frederic Flipo" />
             <div className="welcome__container__ident--sub">
               <h2 className="welcome__container__ident--sub--text1">Frédéric FLIPO</h2>  
               <h3 className="welcome__container__ident--sub--text2">Développeur Web</h3>
@@ -78,14 +78,14 @@ function Accueil({ projets }) {
       </section>
 
       {/* section Services */}
-      <section className="block" id="services">
+      <section className="block" id="services" aria-labelledby="section Services">
         <Element  name="services" className="block__title">Services</Element>          
         <div className="block__line"></div>
         <div className="services">
           <Block
             title="Augmentez votre visibilité"
             tech="Front-end"
-            icone={<MdOutlineScreenSearchDesktop />}
+            icone={<MdOutlineScreenSearchDesktop aria-label="Icône représentant la visibilité sur internet" />}
             text1="Vous souhaitez attirer plus de clients, vous rendre visible sur internet? La solution est simple: créez votre propre site vitrine." 
             text2="Intégrez les technologies récentes et favorisez la conception Responsive!"
           />
@@ -93,7 +93,7 @@ function Accueil({ projets }) {
           <Block 
             title="Ajoutez des services à votre site web"
             tech="Back-end"
-            icone={<FaUserGear />}
+            icone={<FaUserGear aria-label="Icône représentant un processus utilisateur" />}
             text1="Vous souhaitez fidéliser vos prospects et clients, donner à votre entreprise une image professionnelle?" 
             text2="Ajoutez des fonctionnalités intelligentes."
           />
@@ -101,7 +101,7 @@ function Accueil({ projets }) {
           <Block 
             title="Augmentez votre trafic"
             tech="SEO"
-            icone={<MdVisibility />}
+            icone={<MdVisibility aria-label="Icône représentant la visibilité par un oeil" />}
             text1="Améliorez le référencement naturel de votre site, sa performance, optimisez son contenu, intégrez le référencement local." 
             text2="Devenez visible sur les moteurs de recherche!"
           />
@@ -109,7 +109,7 @@ function Accueil({ projets }) {
           <Block 
             title="Améliorez l'expérience des utilisateurs locaux"
             tech="SEO local"
-            icone={<BsGeoAltFill />}
+            icone={<BsGeoAltFill aria-label="Icône représentant la position sur une carte" />}
             text1="Optimisez votre visibilité locale avec Goocle Business Profile (anc. Google My Business), intégrez vos microdonnées et structurez les."
             text2="Soyez facile à trouver dans votre zone géographique!"
           />
@@ -117,7 +117,7 @@ function Accueil({ projets }) {
           <Block
             title="Soyez plus inclusifs pour le handicap"
             tech="Accessibilité"
-            icone={<MdOutlineAccessibleForward />}
+            icone={<MdOutlineAccessibleForward aria-label="Icône représentant l'accessibilité" />}
             text1="Rendez votre site web utilisable par le plus grand nombre, y compris les personnes ayant des handicaps."
             text2="Aidez-les à Percevoir, Comprendre, Naviguer et Interagir de manière efficace!"
           />
@@ -125,7 +125,7 @@ function Accueil({ projets }) {
           <Block 
             title="Vous manquez de ressources?"
             tech="Appelez un freelance"
-            icone={<SiFreelancer />}
+            icone={<SiFreelancer aria-label="Icône représentant la flexibilité" />}
             text1="Pour mettre en oeuvre vos projets, il vous manque des compétences ou simplement des ressources. Renforcez votre équipe selon vos besoins."
             text2="Gagnez en rapidité et en flexibilité!"
           />
@@ -134,10 +134,10 @@ function Accueil({ projets }) {
       </section>
 
       {/* section Portfolio */}
-      <section className="block" id="portfolio">
+      <section className="block" id="portfolio" aria-labelledby="section Portfolio">
         <Element  name="portfolio" className="block__title">Portfolio</Element>       
         <div className="block__line"></div>
-        <div className="gallery">
+        <div className="gallery" aria-label="Galerie des projets réalisés">
           {projets.map((projet) => (
             <Card
               key={projet.id}
@@ -151,10 +151,10 @@ function Accueil({ projets }) {
       </section>
 
       {/* section Compétences */}
-      <section className="block" id="competences">
+      <section className="block" id="competences" aria-labelledby="section Compétences">
         <Element  name="competences" className="block__title">Compétences</Element>
         <div className="block__line"></div>
-        <p className="block__text">Développement</p>
+        <p className="block__text" aria-label="Langages de développement">Développement</p>
         <div className="skillsContainer">
           {skillData.filter(skill => skill.type === "1").map(skill => (
             <div key={skill.id} className="skillsContainer__item">
@@ -164,7 +164,7 @@ function Accueil({ projets }) {
           ))}
         </div>
         <div className="block__line"></div>
-        <p className="block__text">Outils et SEO</p>
+        <p className="block__text" aria-label="Outils et SEO">Outils et SEO</p>
         <div className="skillsContainer">
           {skillData.filter(skill => skill.type === "2").map(skill => (
             <div key={skill.id} className="skillsContainer__item">
@@ -176,10 +176,10 @@ function Accueil({ projets }) {
       </section>
 
       {/* section Contact */}
-      <section className="block" id="contact">
+      <section className="block" id="contact" aria-labelledby="Section de contact">
         <Element  name="contact" className="block__title">Vous voulez discuter d'un projet ou juste faire connaissance ?</Element>
         <div className="block__line"></div>
-        <ContactForm />
+        <ContactForm role="form" aria-describedby="Formulaire de contact"/>
       </section>
 
     </div>

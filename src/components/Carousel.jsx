@@ -19,14 +19,23 @@ function Carousel ({ pictures }) {
 
     return (
 
-        <div className='carousel'>
-          <button className={ (pictures.length) > 1 ? 'carousel__previousButton--active' : 'carousel__previousButton--inactive'} onClick={prevImage}>
-            <IoChevronBackSharp className='carousel__previousButton--icone' /> {/* chevron précédent */}
+        <div className='carousel' role="region" aria-roledescription="carrousel" aria-label="Carrousel d'images">
+          <button 
+            className={ (pictures.length) > 1 ? "carousel__previousButton--active" : "carousel__previousButton--inactive"} 
+            onClick={prevImage} 
+            aria-label="Afficher l'image précédente" 
+            disabled={pictures.length <= 1}
+          >
+            <IoChevronBackSharp className="carousel__previousButton--icone" /> {/* chevron précédent */}
           </button>
-          <img src={require(`../assets/${pictures[currentIndex]}`)} className='carousel__picture' alt='carousel' />
-          <p className={ (pictures.length) > 1 ? 'carousel__slideIndex--active' : 'carousel__slideIndex--inactive'} >{currentIndex+1}/{pictures.length}</p>
-          <button className={ (pictures.length) > 1 ? 'carousel__nextButton--active' : 'carousel__nextButton--inactive'} onClick={nextImage}>
-            <IoChevronForwardSharp className='carousel__nextButton--icone' /> {/* chevron suivant */}
+          <img src={require(`../assets/${pictures[currentIndex]}`)} className="carousel__picture" alt="carousel" />
+          <p className={ (pictures.length) > 1 ? "carousel__slideIndex--active" : "carousel__slideIndex--inactive"} >{currentIndex+1}/{pictures.length}</p>
+          <button className={ (pictures.length) > 1 ? "carousel__nextButton--active" : "carousel__nextButton--inactive"} 
+            onClick={nextImage} 
+            aria-label="Afficher l'image suivante" 
+            disabled={pictures.length <= 1}
+          >
+            <IoChevronForwardSharp className="carousel__nextButton--icone" /> {/* chevron suivant */}
           </button>
         </div>
 

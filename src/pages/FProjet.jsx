@@ -12,21 +12,27 @@ function FProjet() {
 
   /* gestion du cas où le projet de l'id sélectionné n'existe pas */
   if (!projet) {
-    return <Error />
+    return (
+      <div role="alert" aria-live="off">
+        <Error />
+      </div>
+    )
   }
 
   return (
     <div className='info'>
 
       {/* Carrousel de photos */}
-      <Carousel className="carousel" pictures={projet.pictures} />
+      <div className="blockCarousel">
+        <Carousel pictures={projet.pictures} />
+      </div>
 
       {/* informations principales du projet */}
-      <div className="infoBlock">
+      <div className="infoBlock" role="region" aria-labelledby="Informations du projet">
         <div className='identification'> 
-          <h1 className='identification__title'>{projet.description}</h1>
-          <p className='identification__theme'>{projet.theme}</p>
-          <div className='identification__tags'> {/* tags du projet */}
+          <h1 className='identification__title' aria-label={`Titre du projet : ${projet.description}`}>{projet.description}</h1>
+          <p className='identification__theme' aria-label={`Thème du projet : ${projet.theme}`}>{projet.theme}</p>
+          <div className='identification__tags' aria-label="Tags du projet"> {/* tags du projet */}
             {projet.tags.map((tag, index) => (
               <p key={index} className={tag !== undefined ? 'identification__tags--tag' : ''}>
                 {tag}
@@ -37,7 +43,7 @@ function FProjet() {
       </div>
 
       {/* informations détaillées du projet */}
-      <div className="details">
+      <div className="details" role="region" aria-labelledby="Détails du projet">
           <article  className="details__block">
             <Collapse title="Détails de la mise en oeuvre">
               <span>
