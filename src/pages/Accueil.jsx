@@ -62,11 +62,11 @@ function Accueil({ projets }) {
         <Element name="welcome"></Element>
         <span className="welcome__block1"></span>
         <span className="welcome__block2"></span>
-        <img className="welcome__pictureAccueil" src={pictureAccueil} alt="Paysage de montagne" />
+        <img className="welcome__pictureAccueil" src={pictureAccueil} alt="Paysage de montagne" title="Accueil - Paysage de montagne" />
         <div className="welcome__container">
           <h1 className="welcome__container--banner">Créez de la valeur dans l'écosystème internet</h1>
           <div className="welcome__container__ident">
-            <img className="welcome__container__ident--pictureProfile" src={pictureProfile} alt="Profile" />
+            <img className="welcome__container__ident--pictureProfile" src={pictureProfile} alt="Profile" title="Photo de profile Frederic Flipo" />
             <div className="welcome__container__ident--sub">
               <h2 className="welcome__container__ident--sub--text1">Frédéric FLIPO</h2>  
               <h3 className="welcome__container__ident--sub--text2">Développeur Web</h3>

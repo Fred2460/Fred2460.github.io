@@ -27,6 +27,7 @@ function ContactForm() {
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
+          aria-required="true"
         />
       </div>
       <div>
@@ -40,6 +41,7 @@ function ContactForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
+          aria-required="true"
         />
       </div>
       <div>
@@ -53,6 +55,7 @@ function ContactForm() {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           required
+          aria-required="true"
         />
       </div>
       <input type="hidden" name="subject" value="Demande de contact" />
